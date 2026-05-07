@@ -20,17 +20,17 @@ This lab demonstrates the practical implementation of File Integrity Monitoring 
 
 ### Step 1: Agent Connectivity
 The Wazuh agent was successfully installed and connected to the Ubuntu-based Wazuh Manager.
-![Agent Connection Status](Agent%20Connection%20Status(174).png)
+![Agent Connection Status](Agent%20Connection%20Status(174).jpg)
 *Figure 1: Wazuh Agent showing "Running" status and successful connection to the Manager IP.*
 
 ### Step 2: Configuring the Detective Control
 I modified the `ossec.conf` file to monitor the `SensitiveFiles` directory in real-time. This is where the specific GRC policy is translated into a technical rule.
-![ossec.conf Configuration](ossec.conf%20Configuration(183).png)
+![ossec.conf Configuration](ossec.conf%20Configuration(183).jpg)
 *Figure 2: Adding the directory path to the `<syscheck>` section for real-time monitoring.*
 
 ### Step 3: Simulating a Risk Event
 To verify the control, I created a simulated "Financial Forecast" document and performed unauthorized actions (Modify and Delete).
-![File Creation and Modification](File%20Creation%20and%20Modification(190).png)
+![File Creation and Modification](File%20Creation%20and%20Modification(190).jpg)
 *Figure 3: Creating the sensitive document in the monitored Windows directory.*
 
 ---
